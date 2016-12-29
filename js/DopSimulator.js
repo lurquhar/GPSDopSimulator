@@ -8,7 +8,7 @@ function writeMessage(message) {
 }
 
 function loadImages(sources, callback) {
-    var assetDir = '/asset/';
+    var assetDir = '';
     var images = {};
     var loadedImages = 0;
     var numImages = 0;
