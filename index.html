@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GPS DOP Simulator</title>
+
+        <link href="/css/bootstrap.css" rel="stylesheet">
+
+	    <style>
+	        #buttons {position: absolute;left: 10px;top: 0px;}
+	        button {margin-top: 10px;display: block;width: 150px;}
+	        output {margin-top: 400px;}
+	        td { min-width: 150px; }
+	        p {font-family:Arial, Helvetica, sans-serif;font-weight:bold;}
+	    </style>
+    </head>
+    
+	<body bgcolor="#18191b">
+        <table>
+            <tr>
+                <td width="20%" bgcolor="#18191b"></td>
+
+                <td width="50%" bgcolor="#18191b">
+                    <div id="container" align="center"></div>
+  	                <div id="buttons output" align="center">
+                        <button type="button" id="ButtonAddSat" class="btn btn-primary">
+                            Add Satellite
+                        </button>
+	                    <button type="button" id="ButtonRemoveSat" class="btn btn-primary">
+                            Remove Satellite
+                        </button>
+                    </div>
+                    <p align="center">For an explaination of DOP see <a href="Dilution_of_Precision.pdf">here</a>.</p>
+                </td>
+
+                <td width="10%" bgcolor="#18191b" valign="center" align="left">
+  
+                    <div class="well">
+                        <p id="output-nsat"># Sat: 1</p>   
+	                    <p id="output-pdop">PDOP: N/A</p>
+	                    <p id="output-hdop">HDOP: N/A</p>
+	                    <p id="output-gdop">GDOP: N/A</p>
+	                    <p id="output-vdop">VDOP: N/A</p>
+	                    <p id="output-tdop">TDOP: N/A</p>
+	                </div>
+	            </td>
+                <td width="10%" bgcolor="#18191b"></td>
+            </tr>
+        </table>
+        <script src="/js/kinetic-v4.7.4.js"></script>
+        <script src="/js/numeric-1.2.6.js"></script>
+        <script src="/js/DopSimulator.js"></script>
+	</body>
+</html>
